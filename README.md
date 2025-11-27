@@ -10,7 +10,7 @@ RackOpt simulates a cluster of computing nodes where tasks arrive over time and 
 - 🎯 **Optimization Heuristics** benchmarking
 
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: GPL-3.0](https://img.shields.io/badge/License-GPL%203.0-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 ---
 
@@ -545,7 +545,7 @@ Contributions are welcome! Please feel free to submit issues and pull requests.
 
 ## 📄 License
 
-MIT License - see [LICENSE](LICENSE) for details.
+GPL-3.0 License - see [LICENSE](LICENSE) for details.
 
 ---
 
