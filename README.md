@@ -33,9 +33,9 @@ In a datacenter or cloud environment, computing tasks constantly arrive and need
 - **Whether** to reject it (if resources are insufficient)
 
 Bad scheduling leads to:
-- ❌ Wasted resources (idle servers)
-- ❌ SLA violations (missed deadlines)
-- ❌ Poor user experience (rejected tasks)
+- Wasted resources (idle servers)
+- SLA violations (missed deadlines)
+- Poor user experience (rejected tasks)
 
 ### The Solution
 
@@ -50,14 +50,14 @@ RackOpt provides a **simulation environment** where you can:
                     ┌─────────────────────────────────────────┐
                     │           RackOpt Simulator             │
                     ├─────────────────────────────────────────┤
-   Tasks Arrive     │  ┌──────┐ ┌──────┐ ┌──────┐ ┌──────┐   │
-   ─────────────►   │  │Node 0│ │Node 1│ │Node 2│ │Node 3│   │
-   (CPU, RAM,       │  │ ████ │ │ ██   │ │      │ │ ███  │   │
-    deadline)       │  │ ████ │ │      │ │      │ │      │   │
-                    │  └──────┘ └──────┘ └──────┘ └──────┘   │
+   Tasks Arrive     │  ┌──────┐ ┌──────┐ ┌──────┐ ┌──────┐    │
+   ─────────────►   │  │Node 0│ │Node 1│ │Node 2│ │Node 3│    │
+   (CPU, RAM,       │  │ ████ │ │ ██   │ │      │ │ ███  │    │
+    deadline)       │  │ ████ │ │      │ │      │ │      │    │
+                    │  └──────┘ └──────┘ └──────┘ └──────┘    │
                     │                                         │
-   Your Policy      │  Metrics: Completed, Rejected, SLA...  │
-   ◄─────────────   │  Reward: +1 complete, -10 reject, ...  │
+   Your Policy      │  Metrics: Completed, Rejected, SLA...   │
+   ◄─────────────   │  Reward: +1 complete, -10 reject, ...   │
    (allocate to     └─────────────────────────────────────────┘
     node X)
 ```
@@ -466,28 +466,6 @@ Save screenshots:
 renderer.save_screenshot("output/frame.png")
 ```
 
----
-
-## 📁 Project Structure
-
-```
-rackopt/
-├── src/rackopt/
-│   ├── core/           # Data models (Task, Node, Observation, Action)
-│   ├── env/            # Simulation environment and events
-│   ├── config/         # Configuration management
-│   ├── workload/       # Task generation and trace loading
-│   ├── policies/       # Scheduling algorithms
-│   ├── metrics/        # Performance tracking
-│   ├── viz/            # Pygame visualization
-│   └── utils/          # Diagnostics and helpers
-├── examples/           # Example scripts
-├── tests/              # Unit tests
-└── assets/             # Images and demo files
-```
-
----
-
 ## 📖 Examples
 
 | Example | Description |
@@ -556,7 +534,7 @@ If you use RackOpt in your research, please cite:
 ```bibtex
 @software{rackopt2025,
   title={RackOpt: Visual Cluster Simulation for Task Scheduling Research},
-  author={RackOpt Contributors},
+  author={Paulo Jarbas},
   year={2025},
   url={https://github.com/PJarbas/rackopt}
 }
@@ -573,7 +551,3 @@ RackOpt was designed for research in:
 - Workload characterization
 
 ---
-
-<p align="center">
-  Made with ❤️ for the research community
-</p>
